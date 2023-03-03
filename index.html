@@ -33,7 +33,8 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Diffusion in the Dark: A Diffusion Model for Low Light Text Recognition</h1>
+          <h1 class="title is-1 publication-title">Diffusion in the Dark:<br>
+            A Diffusion Model for Low Light Text Recognition</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://ccnguyen.github.io">Cindy M. Nguyen</a>,</span>
@@ -55,7 +56,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2204.07267.pdf"
+                <a href="https://arxiv.org/pdf/xx.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -64,7 +65,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2204.07267"
+                <a href="https://arxiv.org/abs/xx"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -105,9 +106,8 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered">
         <img src="static/images/teaser_text.png">
-        <h2 class="subtitle has-text-centered">
-          teaser
-        </h2>
+<!--        <h2 class="subtitle has-text-centered">-->
+<!--        </h2>-->
       </div>
 
   </div>
@@ -148,8 +148,11 @@
     <div class="hero-body">
         <img src="static/images/pipeline.png">
         <h2 class="subtitle has-text-centered">
-          Illustration of our end-to-end pipeline, which includes a capture, interpolation, and reconstruction step.
-          The loss is backpropagated to the individual pixel exposures and weights of the decoding network.
+          During training, we randomly select a scale and denoise
+          patches using the low-light measurement and low-resolution estimates
+          of global exposure levels. During inference, we use a multi-scale
+          patch-based approach to gradually reconstruct a full-resolution well-lit
+          image.
         </h2>
       </div>
 
