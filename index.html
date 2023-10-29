@@ -182,7 +182,7 @@
 
           <div class="is-size-5 publication-authors">
             <span class="author-block">Stanford University</span><br>
-<!--            <span class="author-block"><i>arxiv</i></span>-->
+           <span class="author-block"><i>WACV 2024</i></span>
           </div>
 
           <div class="column has-text-centered">
@@ -218,12 +218,12 @@
 <!--              </span>-->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/computational-imaging/did"
+                <a href="https://github.com/computational-imaging/diffusion-in-the-dark/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code (coming soon)</span>
+                  <span>Code</span>
                   </a>
               </span>
             </div>
@@ -253,18 +253,11 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Images are indispensable for the automation of high-level tasks, such as text recognition.
-            Low light conditions pose a challenge for these high-level perception stacks,
-            which are often optimized on well-lit, artifact-free images.
-          </p>
-          <p>
-            Reconstruction methods for low-light images
-            can produce well-lit counterparts, but typically at the cost of high-frequency details critical for
-            downstream tasks. We propose <b>Diffusion in the Dark (DiD)</b>, a diffusion model for low-light image reconstruction
-            that provides qualitatively competitive reconstructions with that of SOTA, while preserving high-frequency
-            details even in extremely noisy, dark conditions. We demonstrate that DiD, without any task-specific
-            optimization, can outperform SOTA low-light methods in low-light text recognition on real images,
-            bolstering the potential of diffusion models for ill-posed inverse problems.
+            Capturing images is a key part of automation for high-level tasks such as scene text recognition. 
+Low-light conditions pose a challenge for high-level perception stacks, which are often optimized on well-lit, artifact-free images. 
+Reconstruction methods for low-light images can produce well-lit counterparts, but typically at the cost of high-frequency details critical for downstream tasks. We propose <b>Diffusion in the Dark (DiD)</b>, a diffusion model for low-light image reconstruction for text recognition. 
+DiD provides qualitatively competitive reconstructions with that of state-of-the-art (SOTA), while preserving high-frequency details even in extremely noisy, dark conditions.
+We demonstrate that DiD, without any task-specific optimization, can outperform SOTA low-light methods in low-light text recognition on real images, bolstering the potential of diffusion models to solve ill-posed inverse problems. 
           </p>
         </div>
       </div>
@@ -278,7 +271,7 @@
 <section class="section">
   <div class="container is-max-desktop">
     <div class="hero-body">
-        <img src="static/images/pipeline.png">
+        <img src="static/images/did_pipeline.png">
         <h3 class="subtitle has-text-centered">
           During training, we randomly select a scale and denoise
           patches using the low-light measurement and low-resolution estimates
@@ -428,11 +421,11 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{nguyen2023diffusion,
+    <pre><code>@article{nguyen2024diffusion,
   author    = {Nguyen, Cindy M and Chan, Eric R and Bergman, Alexander W and Wetzstein, Gordon},
   title     = {Diffusion in the Dark: A Diffusion Model for Low-Light Text Recognition},
-  journal   = {arXiv preprint arXiv:2303.04291},
-  year      = {2023},
+  journal   = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+  year      = {2024},
 }</code></pre>
   </div>
 </section>
